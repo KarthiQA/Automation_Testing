@@ -90,3 +90,102 @@ console.log(Student)
 
 let o = {empId:123, empName:"Julie", empSalary: 52000}
 console.log(o)
+
+// Global scope
+let b = "Karthi"
+function name() {
+    console.log(b); // - global scope
+}
+name()
+console.log(b); // - global scope
+
+//---------------
+// Function scope
+
+function emp() {
+    let s = 10
+    console.log(s);
+}
+emp()
+// console.log(s); // - ReferenceError: s is not defined
+
+// Block scope
+if (true) {
+    let num = 1234
+    console.log(num);   
+}
+// console.log(num); // - ReferenceError: num is not defined
+
+// Local scope
+function email() {
+    let emailid = "karthiknjithu@gmail.com"
+    console.log(emailid);   
+}
+email()
+=======
+//Employee details
+
+var empId = 45
+var empName = 'Karthi'
+var empSalary = 52000
+
+console.log(typeof empId,empId)
+console.log(typeof empName,empName)
+console.log(typeof empSalary,empSalary)
+
+//Student Info 
+
+let studentName = 'RAJ'
+//let studentName = 'RAM'
+let studentDept = 'BCA'
+let studentMark = 78
+studentMark = 86
+console.log(studentName)
+console.log(studentDept)
+console.log(studentMark)
+
+//Company details 
+
+const companyName = 'Apple'
+//const companyName = 'Apple'
+const companyLocation = 'USA'
+const companycode = 8822
+
+console.log(companyName)
+console.log(companyLocation)
+console.log(companycode)
+
+//User Profile 
+
+const userName = 'Karthikeyan'
+let age = 26
+let city = 'Coimbatore'
+
+age = 28
+city = 'GOA'
+
+console.log(userName)
+console.log(age)
+console.log(city)
+
+//Boolean 
+
+let isActive = true
+let isLoggedIn = false
+let isStudent = true
+
+console.log(typeof isActive, isActive)
+console.log(typeof isLoggedIn,isLoggedIn)
+console.log(typeof isStudent, isStudent) 
+
+//Array
+
+let Student = ['Rajesh','KIM','ROSE']
+
+console.log(Student)
+
+//object
+
+let o = {empId:123, empName:"Julie", empSalary: 52000}
+console.log(o)
+
