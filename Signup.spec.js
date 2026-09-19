@@ -24,3 +24,35 @@ test('Browser launch', async ({ page }) => {
     // close browser
     await page.close();
 })
+
+// Global scope
+let b = "Karthi"
+function name() {
+    console.log(b); // - global scope
+}
+name()
+console.log(b); // - global scope
+
+//---------------
+// Function scope
+
+function emp() {
+    let s = 10
+    console.log(s);
+}
+emp()
+// console.log(s); // - ReferenceError: s is not defined
+
+// Block scope
+if (true) {
+    let num = 1234
+    console.log(num);   
+}
+// console.log(num); // - ReferenceError: num is not defined
+
+// Local scope
+function email() {
+    let emailid = "karthiknjithu@gmail.com"
+    console.log(emailid);   
+}
+email()
